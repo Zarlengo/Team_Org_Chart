@@ -144,7 +144,10 @@ async function init() {
                       .then(response => {keepAddingEmployees = response.confirmation;})
                       .catch(error => console.log(error));
     }
-    fileIO.write(outputPath, render(employeeArray));
+
+    fileIO.write(outputPath, render(employeeArray))
+          .then(() => console.log("The file has been created successfully. It is located in the `output` folder."))
+          .catch(error => console.log(`There was a problem creating the file:\n${error}`));
 }
 
 init();
