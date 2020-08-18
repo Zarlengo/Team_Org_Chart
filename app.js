@@ -3,7 +3,7 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
-const FileIO = require("./lib/fileIO");
+const FileIO = require("./lib/FileIO");
 const fileIO = new FileIO();
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
