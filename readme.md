@@ -1,8 +1,11 @@
 # Team Organization Chart
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![Build Status](https://travis-ci.com/Zarlengo/Team_Org_Chart.svg?branch=master)](https://travis-ci.com/Zarlengo/Team_Org_Chart)
 
 ## Description
 A node.js CLI to dynamically create a team chart for a software engineering team.
+
+![Welcome](./Assets/welcome.jpg)
 
 ## Table of Contents
 
@@ -22,14 +25,61 @@ A node.js CLI to dynamically create a team chart for a software engineering team
 	```
 	npm install
 	```
+ 
+![Install](./Assets/install.gif)
 
 ## 2 Usage
+
 1. Run app.js
 	```
 	node app.js
 	```
 
-2. Answer questions
+![Run app.js](./Assets/app_js.gif)
+
+2. Enter the necessary information for an employee:
+* [Manager](#manager)
+* [Engineer](#engineer)
+* [Intern](#intern)
+
+
+#### Manager
+* Enter employee's name
+* Enter employee's id number
+* Enter employee's email
+* Select employee's role ```Manager```
+* Enter employee's office number
+* Continue adding employees ``` Yes``` or ``` No```
+
+![Manager Questions](./Assets/manager.gif)
+
+#### Engineer
+* Enter employee's name
+* Enter employee's id number
+* Enter employee's email
+* Select employee's role ```Engineer```
+* Enter employee's GitHub username
+* Continue adding employees ``` Yes``` or ``` No```
+
+![Engineer Questions](./Assets/engineer.gif)
+
+#### Intern
+* Enter employee's name
+* Enter employee's id number
+* Enter employee's email
+* Select employee's role ```Intern```
+* Enter employee's school
+* Continue adding employees ``` Yes``` or ``` No```
+
+![Intern Questions](./Assets/intern.gif)
+
+3. File is created and placed into the output folder
+
+![Program Finish](./Assets/finish.jpg)
+
+4. Review the generated team webpage
+
+![Team](./Assets/team.jpg) 
 
 ## 3 License
     Copyright © 2020 Chris Zarlengo
@@ -50,10 +100,11 @@ A node.js CLI to dynamically create a team chart for a software engineering team
 
 
 ## 5 Tests
-1. Run jest tests
+1. Run jest test
 	```
 	npm run test
 	```
+* Testing is also run online through a [Constant Integration (CI) provider](https://travis-ci.com/github/Zarlengo/Team_Org_Chart)
 
 ## 6 Questions
 * [Github Profile for Zarlengo](https://github.com/Zarlengo)
